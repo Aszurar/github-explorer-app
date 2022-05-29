@@ -1,6 +1,6 @@
-# PokeDev
+# Github Explorer(app) | Ignite
 
- O projeto **PokeDev** é um aplicativo mobile que simula uma pokedex do jogos e anime Pokémon.
+ O projeto **Github Explorer(app)** é um aplicativo que consome a API do GitHub e exibe informações de qualquer repositório público a partir da busca pelo usuario/nome-do-repositorio, exemplo: facebook/react e usa animações suaves e didáticas com React Native Reanimated para melhorar a experiência do usuário. Além disso, podemos navegar entre as issues de cada repositórios e acessá-las apertando no card da issue que será aberto o navedor com a url da issue.
 
 
 <h3 align="center">
@@ -15,66 +15,55 @@
 ___
 
 <div align="center" >
-    <img src="https://i.imgur.com/Pb0pRVA.gif" width="250">____<img src="https://i.imgur.com/riiOoLb.gif" width=250>
+    <img src="" width="250">____<img src="" width=250>
 </div>
 
-
+****
 - [**Link do vídeo completo sobre o projeto**]()
 ___
 
 ## :information_source: Sobre
 
-- Uma **pokedex** seria uma aparelho que teria todas informações sobre os pokémons, os quais os personagens dos jogos e do anime usam para conhecer sobre cada pokémon, ver suas estatísticas, movimentos, habitat, habilidades dentre outras informações. Ou seja, é basicamente uma aplicação Wiki ou Bestiário de pokémon.
-- Para a alimentação dos dados foi usado a PokeAPI, uma API de Pokémon muito bem documentada, livre para usar e popular, segue o link:
-  - PokeApi: https://pokeapi.co/
+- O github é uma plataforma de repositórios remotos, podemos subir nossos projetos, nossas branchs, detalhar nossos projetos, criar uma descrição e facilitar o trabalho em equipe de determinados projetos e/ou divulgar nossos projetos para outros desenvolvedores.
+- Assim, o GitHub Explorer simplesmente é um app que conseguimos pesquisar sobre repositórios públicos e ver alguns detalhes deles como favoritos, forks, issues, descrições e acessar as issues desses repositórios.
+- Para a alimentação dos dados foi usado o GithubAPI, API do Github que disponibiliza informações sobre repositórios públicos e também é usada para o ensinamento de API REST, livre para usar e popular, segue o link:
+  - GithubAPI: https://docs.github.com/pt/rest
+  - Vale ressaltar que essa API possui limitações para a quantidade de requisições que pode receber por hora de um mesmo usuário, no caso seriam 60/hora.
 - Para criação das interfaces foi usado React Native em conjunto com TypeScript e diversas bibliotecas disponíveis para React Native como:
   - React Navigation: https://reactnavigation.org/
   - Styled Components: https://www.styled-components.com/
+  - Além disso foi usado o EXPO para melhor produtividade: https://docs.expo.dev/
 - dentre outras, abaixo, na sessão de   <a href="#rocket-principais-tecnologias-utilizadas">Tecnologias</a> estará mais detalhado.
 
 * **Home**:
 
 <div align="center" >
-  <img src="https://i.imgur.com/YAZhIOl.gif" width="250">____<img src="https://i.imgur.com/Xr7jUeY.gif" width=250>____<img src="https://i.imgur.com/z1NJ8Hs.gif" width="250">
+  <img src="" width="250">____<img src="" width=250>____<img src="" width="250">
 </div>
 
 ___
 
 ## :interrobang: Motivo
 
-Com esse projeto foi posto em prática quase todos os conceitos aprendidos com minha experiência profissional e educacional princpalmente com a Rocketseat.
+Com esse projeto **foi posto em prática os conceitos aprendidos sobre animações no React-Native, uso do React-Native-Reanimated, passando dados via navegação e houve o primeiro contato com o componente de Linking do React-Native que realiza navegações seja para url de sites comuns abrindo navegador, navegando para outros apps ou até mesmo para deep links**.
 
 1. **Home**
-<img src="https://i.imgur.com/CPbyHen.png" width="1000">
+<img src="" width="1000">
 - Funcionalidades:
-
-  - Listagem de todos Pokémons e suas variações.
+  
+  - Listagem dos repositórios pesquisados.
     - Perfomática, por meio da Flatlist.
 
-  - Pesquisa de qualquer Pokémons e suas variações.
-    - É feita pelo nome(_não existe pokémon com o mesmo nome_).
+  - Pesquisa de qualquer repositório público.
+    - É feita pelo nome do usuário em conjunto com o respositóio(_Exemplo: facebook/react facebook/react-native_).
     - Todos Pokémon que contém o nome digitado serão mostrados como resultados garantindo assim mesmo que o usuário não lembre totalmente do nome do Pokémon, consiga encontrá-lo.
       - Exemplo: Pesquisar com a palavra **Regi**, o resultado será **Regigigas, Regice, Regirock, Regidragon, Registeel e Regieleki.**
 
-  - Reset de pesquisa.
-    - É feito por meio de um botão que é ativado no Input após a pesquisa ou caso ocorra algum erro.
-    - Garante melhor usabilidade e praticidade.
+  - Animação de deslizamento(Swipeable) em horizontal para esquerda de cada card de repositórios da tela Home provocando assim a ação de remoção daquele repositório.
+    - É perguntando ao usuário com um Alert se ele realmente deseja exluir aquele reposiório que ele provocou o deslizamento/swipeable
+      - Usuário pode cancelar a ação de remoção ou confirmar.
 
-  - Número total de Pokémon seja do resultado da pesquisa ou da listagem geral.
-    - É mostrado na tela em um componente que se atualiza a cada pesquisa ou listagem.
-
-  - Componente de Loading personalizado para cada componente.
-    - Uso da Lottie Animations.
-    - Loading interativo no Input
-
-  - Componente de Erro personalizado e animado caso a listagem ou a pesquisa não tenham resultados.
-    - Uso da Lottie Animations.
-    - Erro interativo no Input.
-
-  - Focus e Submit inteligente no Input de pesquisa.
-    - Ao digitar o nome do Pokémon, podemos tanto pesquisar apertando o botão de pesquisa quanto apertar o botão de submit padrão do teclado do dispositivo móvel.
-    - Ao apertar em qualquer outra região da tela será retirado o foco do Input.
-    - Foi necessário o uso do TouchableWithoutFeedback para que o Input não fique ativado quando o usuário clicar em qualquer outra região da tela em conjunto com o onStartShouldSetResponder para evitar problemas de icompatibilidade com a Flatlist e RectButton.
+- Página de detalhes
 
 
 * **Página de detalhes sobre o Pokémon**:
@@ -82,62 +71,34 @@ Com esse projeto foi posto em prática quase todos os conceitos aprendidos com m
   <img src="https://i.imgur.com/1ocPfUP.gif" width="250">____<img src="https://i.imgur.com/riiOoLb.gif" width=250>____<img src="https://i.imgur.com/6iHu4us.gif" width="250">
 </div>
 
-2. **Página sobre o Pokémon**
+1. **Página sobre o Pokémon**
 <img src="https://i.imgur.com/5OJQkwU.png" width="1000">
 
  - Funcionalidades:
 
-   - Informações sobre o Pokémon.
-   - Nome, número, habitat, tipo, habilidades, etc.
-   - Todas as informações são mostradas em um componente que se atualiza a cada pesquisa ou listagem.
-   - Componente de loading personalizado e animado em todos componentes.
-   - Nessa tela foi necessário realizar 2 requisições para obtermos todas informações exibitdas:
-     - Uma para obter o nome do Pokémon, tipo, número na national pokedex, peso, altura, habilidades e movimentos.
-     - Outra para obter o habitat, raridade e descrição.
-     - Para isso houve determinada dificuldade pois uma requisição dependia da outra, ou seja, eram processos assíncronos dependentes fazendo com que houvesse difiluldade em garantir que uma requisção seja feita somente após a outra, ou cudiado no uso de uma variável Estado
+  - Exibição do nome completo do repositório animado e parte da descrição do mesmo
+   
+  - Número total de Stars/Favorites daquele repositório.
+   
+  - Número total de Forks daquele repositório.
+   
+  - Número total de Issues abertas daquele repositório.
 
-    - **Modais**
 
-    - Há 2 modais que podem ser acessíveis nessa tela:
-      - **Modal de listando de todos movimentos**
-        - É acessado ao tocar no botão de todos movimentos.
-        - O botão de todos movimentos não é mostrado caso o pokémon não tenha mais de 4 movimentos, ou seja, o modal não é acessível caso todos movimentos do pokémon já estejam sendo mostrado na página de detalhes de pokémon(ate 4).
-        - O Modal é deslizável(swipeable) na vertical, pode ser fechado deslizando para baixo ou aperdando nos botões com os ícones indicando para baixo.
-
-      - **Modal sobre cada movimento**
-        - É acessado por meio do modal acima, no caso, ao apertar em algum movimento da listagem acima o modal sobre o movimento é aberto.
-        - Assim como o de cima, também é deslizável(swipeable), mas nesse caso na horizontal
-        - Nele é feito a requisição para obter as informações exibidas sobre o movimento selecionado.
-        - Essa requisição depende da url do movimento selecionado, ou seja, assim como mencionado anteriormente tamém é uma requisição que depende de outra.
-        - Nesse caso depende da requisição sobre os detalhes do pokémon feita na página de detalhes do pokémon, um dos parâmetros retornados no objeto da resposta é  um vetor de objeto, cada um contendo o nome de todos movimentos daquele pokémon e a url de cada um.
+  - Listagem de todas issues daquele repositório de forma otimizada.
+    
+  - Navegação para cada repositório no Github por meio do navegador padrão do celular
+    - É usado o Linking do React-Native para isso
 
 * **Modais**
 <div align="center" >
-  <img src="https://i.imgur.com/Canu4px.gif" width="175">____<img src="https://i.imgur.com/aKREnNL.gif" width="175">____<img src="https://i.imgur.com/RwkgnR0.gif" width=175>____<img src="https://i.imgur.com/E7qq0iw.gif" width="175">
+  <img src="" width="175">____<img src="" width="175">____<img src="" width=175>____<img src="" width="175">
 </div>
 
-- Funcionalidades em desenvolvimento:
-
-    i. **Modal de evolução dos pokémons**
-    - Não foi possível terminar ainda a parte da impressão no modal e estilização das evoluções de cada pokémon mas a requisição já foi contruída no código assim como o botao de evolução
-        - O modal foi desativado para voltar quando a funcionalidade tiver pronta)
-
-    ii. **Página de "Meus Pokémon" e salvar pokémon**
-    - Funcionalidade que permite o usuário salvar/favoritar determinado pokémon e ele ser salvo localmente no dispositivo físico com Assync Storage.
-    - Ainda não foi possível realizar essa funcionalidade mais já foi planejada.
-
-    iii. **Página sobre o Movimento**
-    - Uma página com mais inforações sobre o movimento selecionado no modal sobre os movimentos.
-    - Teríamos um botão nele que acessaria essa página para detalhar mais informações e uma listagem com todos pokémons que possui aquele movimento.
-
-    iv. Splash Screen
-    - Tela de loading inicial da aplicação.
-
 ___
-
 ## :art: Design
 
-[<h2 align="center">Pokedev</h2>]()
+[<h2 align="center">GitHub Explorer App</h2>]()
 <div align="center">
 <img src="https://i.imgur.com/CPbyHen.png" width="1000">
 <img src="https://i.imgur.com/NagFURR.png" width="1000">
@@ -150,19 +111,21 @@ ___
 2. Estilização:
      - Toda estilização foi realizada com **styled-components**, que é uma biblioteca de css que tem como objetivo facilitar a criação de estilos e componentes de forma mais eficiente e similar a web com ReactJS, assim podemos **manter o mesmo padrão para web e mobile facilitando o desenvolvimento.**
      - Foi criado um **tema global** com as **fontes e cores** do projeto que são passadas no Figma.
-     - A fonte usada foi a **Poppins**, que é uma fonte popular e livre para uso, está na biblioteca do Google Fonts. Foi instalada no projeto como fonte externa tanto para o **android quanto para o IOS**.
+     - A fonte usada foi a **Roboto**, que é uma fonte popular e livre para uso, está na biblioteca do Google Fonts. Foi instalada no projeto como fonte externa tanto para o **android quanto para o IOS**.
      - Para lidar com SVG, JSON, PNG foi necessário realizar uma configuração para que o TypeScript reconheça tais arquivos.
-       - Os SVG foram tipados como componentes React(_React.FC_) em conjunto com a **SvgProps da biblioteca react-native-svg.**
 3. React Native
      - A estrutura dos componentes foi feita por meio de funções, que são **funções que retornam um componente React.**
      - A pasta de um componente é composta por um arquivo chamado **index.tsx** e um arquivo de estilização **styles.ts**.
      - Foi usado o yarn como gerenciador de pacotes.
-     - É utilizado a **react-native-gesture-handler** para criar os botões da aplicação mantendo assim a consistência do dos efeitos de reação do componente entre as platformas IOS e Android.
+     - É utilizado a **react-native-gesture-handler** para criar os botões da aplicação mantendo assim a consistência do dos efeitos de reação do componente entre as platformas IOS e Android, além disso, também é usado presseables e outros tipos de botões  para realização das animações evitando conflitos com os botões do gesture handler
+4. Expo
+     - É usado o EXPO para garantir uma melhor produtividade e configuração das libs para seus usos e inicialização do app. 
 ___
 ## :seedling: Requisitos Mínimos
 
 - Android Studio
 - Celular(Opcional)
+- Expo
 - Node.js
 - React
 - React-Native
@@ -177,18 +140,16 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [Android Studio](https://developer.android.com/studio)
 - [Axios](https://www.npmjs.com/package/axios)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [Lottie Animations React Native](https://www.npmjs.com/package/lottie-react-native)
 - [NodeJS](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [React Navigation](https://reactnavigation.org/)
    - [Stack Navigator](https://reactnavigation.org/docs/stack-navigator/)
-- [React Native Feather](https://www.npmjs.com/package/react-native-feather)
+- [Expo Vector Icons](https://www.npmjs.com/package/react-native-feather)
   - [Feather Icons](https://feathericons.com/)
 - [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/docs/)
-  - [RectButton & Bordeless Button](https://docs.swmansion.com/react-native-gesture-handler/docs/next/api/components/buttons/#rectbutton)
+  - [RectButton](https://docs.swmansion.com/react-native-gesture-handler/docs/next/api/components/buttons/#rectbutton)
 - [React Native Iphone X Helper](https://github.com/ptelad/react-native-iphone-x-helper#readme)
-- [React Native Modal](https://github.com/react-native-modal/react-native-modal)
 - [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/docs/)
 - [React Native Responsive Fontsize](https://www.npmjs.com/package/react-native-responsive-fontsize)
 - [React Native SVG](https://github.com/react-native-svg/react-native-svg)
@@ -200,7 +161,7 @@ ___
 
   - Clonar o projeto:
     ```bash
-     git clone https://github.com/Aszurar/PokeDev.git
+     git clone https://github.com/Aszurar/github-explorer-app.git
     ```
   - É necessário a instalação do **yarn** de acordo com seu sistema operacional, para isso veja como no site do [Yarn](https://github.com/Aszurar/SavePass.git)
   - Instalação das dependências:
@@ -210,24 +171,16 @@ ___
     ```
  - É necessário a instalação do emulador [Android Studios](https://developer.android.com/studio) e das tecnologias requesitadas acima no:seedling:   <a href="#seedling-requisitos-mínimos">**Requisitos**</a>
  - Também é necessário a instalação/configuração de outras tecnologias, para isso siga os passos indicados nessa página de acordo com seu sistema operacional: [Executando uma Aplicação React-Native emulando Windows/Linux/MacOS ou direto no dispositivo mobile Android/IOS](https://react-native.rocketseat.dev/android/linux)
- - Execução -
- - Com o emulador android aberto ou o dispositivo móvel físico conecatdo via USB:
- - **Abra a pasta do projeto com alguma IDE(Vscode) ou simplesmente abra o terminal na pasta do projeto e execute o comando abaixo:**
-    ```bash
-       yarn android
-    ```
-- Caso o metro-bundle não funcione, execute como abaixo:
-    1. Executando o metro-bundle:
-        ```bash
-            yarn start
-        ```
-    2. Executando no android:
-        ```bash
-            yarn android
-        ```
-- Caso esteja no IOS, após as configurações faladas anteriormente até no link mencionado acima, então execute o comando abaixo:
-    ```bash
-        yarn ios
-    ```
+ Execução - Abra a pasta do projeto com alguma IDE(Vscode) ou simplesmente abra o terminal na pasta do projeto e execute o comando abaixo:
+```bash
+   expo start
+```
+Abra o emulador ou conecte o celular(É necessário a instalação do Expo Go) e execute:
+```bash
+    a
+```
+Lembrando que, caso seja executado pelo emulador, o ideal é sempre deixa-lo aberto antes de aplicar os comandos acima.
+
+
 ___
 Desenvolvido por :star2: Lucas de Lima Martins de Souza.
