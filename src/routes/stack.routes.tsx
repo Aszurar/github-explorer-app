@@ -24,15 +24,15 @@ const AppRoutes: React.FC = () => (
       headerTransparent: true
     }}
   >
-   <stackRoutes.Screen
-    name="Dashboard"
-    component={Dashboard}
-   />
+    <stackRoutes.Screen
+      name="Dashboard"
+      component={Dashboard}
+    />
 
-  <stackRoutes.Screen
-    name="Repository"
-    component={Repository}
-   /> 
+    <stackRoutes.Screen
+      name="Repository"
+      component={Repository}
+    />
 
   </stackRoutes.Navigator>
 )
