@@ -26,6 +26,7 @@ ___
 
 - O github é uma plataforma de repositórios remotos, podemos subir nossos projetos, nossas branchs, detalhar nossos projetos, criar uma descrição e facilitar o trabalho em equipe de determinados projetos e/ou divulgar nossos projetos para outros desenvolvedores.
 - Assim, o GitHub Explorer simplesmente é um app que conseguimos pesquisar sobre repositórios públicos e ver alguns detalhes deles como favoritos, forks, issues, descrições e acessar as issues desses repositórios.
+- É o penultimo projeto da trilha de React Native do bootcamp Ignite.
 - Para a alimentação dos dados foi usado o GithubAPI, API do Github que disponibiliza informações sobre repositórios públicos e também é usada para o ensinamento de API REST, livre para usar e popular, segue o link:
   - GithubAPI: https://docs.github.com/pt/rest
   - Vale ressaltar que essa API possui limitações para a quantidade de requisições que pode receber por hora de um mesmo usuário, no caso seriam 60/hora.
@@ -88,9 +89,9 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
   - Navegação para cada repositório no Github por meio do navegador padrão do celular
     - É usado o Linking do React-Native para isso
 
-* **Modais**
+* **Navegando para o Github web e app**
 <div align="center" >
-  <img src="" width="250">____<img src="https://i.imgur.com/9Y1XkCB.png" width="250">
+  <img src="https://i.imgur.com/FGl88GH.png" width="250">____<img src="https://i.imgur.com/9Y1XkCB.png" width="250">
 </div>
 
 ___
