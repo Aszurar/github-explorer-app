@@ -38,7 +38,7 @@ ___
 * **Home**:
 
 <div align="center" >
-  <img src="" width="250">____<img src="" width=250>____<img src="" width="250">
+  <img src="https://i.imgur.com/ACaog7Z.png" width="250">____<img src="" width=250>____<img src="https://i.imgur.com/tMrckt4.png" width="250">
 </div>
 
 ___
@@ -63,12 +63,10 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
     - É perguntando ao usuário com um Alert se ele realmente deseja exluir aquele reposiório que ele provocou o deslizamento/swipeable
       - Usuário pode cancelar a ação de remoção ou confirmar.
 
-- Página de detalhes
 
-
-* **Página de detalhes sobre o Pokémon**:
+* **Página de detalhes sobre o Repositórion**:
 <div align="center" >
-  <img src="" width="250">____<img src="" width=250>____<img src="" width="250">
+  <img src="https://i.imgur.com/Dg2ggCz.png" width="250">____<img src="" width=250>
 </div>
 
 1. **Página sobre o Pokémon**
@@ -92,7 +90,7 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
 
 * **Modais**
 <div align="center" >
-  <img src="" width="175">____<img src="" width="175">____<img src="" width=175>____<img src="" width="175">
+  <img src="" width="250">____<img src="https://i.imgur.com/9Y1XkCB.png" width="250">
 </div>
 
 ___
