@@ -68,11 +68,11 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
 
 * **Página de detalhes sobre o Pokémon**:
 <div align="center" >
-  <img src="https://i.imgur.com/1ocPfUP.gif" width="250">____<img src="https://i.imgur.com/riiOoLb.gif" width=250>____<img src="https://i.imgur.com/6iHu4us.gif" width="250">
+  <img src="" width="250">____<img src="" width=250>____<img src="" width="250">
 </div>
 
 1. **Página sobre o Pokémon**
-<img src="https://i.imgur.com/5OJQkwU.png" width="1000">
+<img src="" width="1000">
 
  - Funcionalidades:
 
@@ -100,9 +100,9 @@ ___
 
 [<h2 align="center">GitHub Explorer App</h2>]()
 <div align="center">
-<img src="https://i.imgur.com/CPbyHen.png" width="1000">
-<img src="https://i.imgur.com/NagFURR.png" width="1000">
-<img src="https://i.imgur.com/dDLRsnX.png" width="100">
+<img src="" width="1000">
+<img src="" width="1000">
+<img src="" width="100">
 </div>
 
 1. Código:
