@@ -46,7 +46,7 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
 1. **Home**
 
 <div align="center" >
-  <img src="https://i.imgur.com/ACaog7Z.png" width="250">____<img src="" width=250>____<img src="https://i.imgur.com/tMrckt4.png" width="250">
+  <img src="https://i.imgur.com/ACaog7Z.png" width="250">____<img src="https://i.imgur.com/gLNxhDY.gif" width=200>____<img src="https://i.imgur.com/tMrckt4.png" width="250">
 </div>
 
 - Funcionalidades:
