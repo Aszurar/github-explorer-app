@@ -85,7 +85,7 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
 
 * **Navegando para o Github web e app**
 <div align="center" >
-  <img src="https://i.imgur.com/FGl88GH.png" width="250">____<img src="https://i.imgur.com/9Y1XkCB.png" width="250">
+    <img src="https://i.imgur.com/7ToH3vE.gif" width="175">____<img src="https://i.imgur.com/FGl88GH.png" width="175">____<img src="https://i.imgur.com/9Y1XkCB.png" width="175">____<img src="https://i.imgur.com/IygQqtF.gif" width="175">
 </div>
 
 ___
