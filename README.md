@@ -26,7 +26,7 @@ ___
 
 - O github é uma plataforma de repositórios remotos, podemos subir nossos projetos, nossas branchs, detalhar nossos projetos, criar uma descrição e facilitar o trabalho em equipe de determinados projetos e/ou divulgar nossos projetos para outros desenvolvedores.
 - Assim, o GitHub Explorer simplesmente é um app que conseguimos pesquisar sobre repositórios públicos e ver alguns detalhes deles como favoritos, forks, issues, descrições e acessar as issues desses repositórios.
-- É o penultimo projeto da trilha de React Native do bootcamp Ignite.
+- É o penultimo desafio da trilha de React Native do bootcamp Ignite.
 - Para a alimentação dos dados foi usado o GithubAPI, API do Github que disponibiliza informações sobre repositórios públicos e também é usada para o ensinamento de API REST, livre para usar e popular, segue o link:
   - GithubAPI: https://docs.github.com/pt/rest
   - Vale ressaltar que essa API possui limitações para a quantidade de requisições que pode receber por hora de um mesmo usuário, no caso seriam 60/hora.
@@ -36,11 +36,6 @@ ___
   - Além disso foi usado o EXPO para melhor produtividade: https://docs.expo.dev/
 - dentre outras, abaixo, na sessão de   <a href="#rocket-principais-tecnologias-utilizadas">Tecnologias</a> estará mais detalhado.
 
-* **Home**:
-
-<div align="center" >
-  <img src="https://i.imgur.com/ACaog7Z.png" width="250">____<img src="" width=250>____<img src="https://i.imgur.com/tMrckt4.png" width="250">
-</div>
 
 ___
 
@@ -49,7 +44,11 @@ ___
 Com esse projeto **foi posto em prática os conceitos aprendidos sobre animações no React-Native, uso do React-Native-Reanimated, passando dados via navegação e houve o primeiro contato com o componente de Linking do React-Native que realiza navegações seja para url de sites comuns abrindo navegador, navegando para outros apps ou até mesmo para deep links**.
 
 1. **Home**
-<img src="" width="1000">
+
+<div align="center" >
+  <img src="https://i.imgur.com/ACaog7Z.png" width="250">____<img src="" width=250>____<img src="https://i.imgur.com/tMrckt4.png" width="250">
+</div>
+
 - Funcionalidades:
   
   - Listagem dos repositórios pesquisados.
@@ -57,21 +56,16 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
 
   - Pesquisa de qualquer repositório público.
     - É feita pelo nome do usuário em conjunto com o respositóio(_Exemplo: facebook/react facebook/react-native_).
-    - Todos Pokémon que contém o nome digitado serão mostrados como resultados garantindo assim mesmo que o usuário não lembre totalmente do nome do Pokémon, consiga encontrá-lo.
-      - Exemplo: Pesquisar com a palavra **Regi**, o resultado será **Regigigas, Regice, Regirock, Regidragon, Registeel e Regieleki.**
 
   - Animação de deslizamento(Swipeable) em horizontal para esquerda de cada card de repositórios da tela Home provocando assim a ação de remoção daquele repositório.
     - É perguntando ao usuário com um Alert se ele realmente deseja exluir aquele reposiório que ele provocou o deslizamento/swipeable
       - Usuário pode cancelar a ação de remoção ou confirmar.
 
-
-* **Página de detalhes sobre o Repositórion**:
+2. ** Página de detalhes sobre o Repositório**
+ 
 <div align="center" >
   <img src="https://i.imgur.com/Dg2ggCz.png" width="250">____<img src="" width=250>
 </div>
-
-1. **Página sobre o Pokémon**
-<img src="" width="1000">
 
  - Funcionalidades:
 
@@ -99,9 +93,7 @@ ___
 
 [<h2 align="center">GitHub Explorer App</h2>]()
 <div align="center">
-<img src="" width="1000">
-<img src="" width="1000">
-<img src="" width="100">
+  <img src="https://i.imgur.com/maJPpLK.png" width="800">
 </div>
 
 1. Código:
