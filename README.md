@@ -61,7 +61,7 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
     - É perguntando ao usuário com um Alert se ele realmente deseja exluir aquele reposiório que ele provocou o deslizamento/swipeable
       - Usuário pode cancelar a ação de remoção ou confirmar.
 
-2. ** Página de detalhes sobre o Repositório**
+2. **Página de detalhes sobre o Repositório**
  
 <div align="center" >
   <img src="https://i.imgur.com/Dg2ggCz.png" width="250">____<img src="" width=250>
