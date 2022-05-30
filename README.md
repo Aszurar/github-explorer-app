@@ -19,7 +19,7 @@ ___
 </div>
 
 ****
-- [**Link do vídeo completo sobre o projeto**]()
+- [**Link do vídeo completo sobre o projeto**](https://www.youtube.com/watch?v=KLNWnMZcdNQ)
 ___
 
 ## :information_source: Sobre
