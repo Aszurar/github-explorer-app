@@ -64,7 +64,7 @@ Com esse projeto **foi posto em prática os conceitos aprendidos sobre animaçõ
 2. **Página de detalhes sobre o Repositório**
  
 <div align="center" >
-  <img src="https://i.imgur.com/Dg2ggCz.png" width="250">____<img src="" width=250>
+  <img src="https://i.imgur.com/Dg2ggCz.png" width="250">____<img src="https://i.imgur.com/a1wYVIW.gif" width=250>
 </div>
 
  - Funcionalidades:
